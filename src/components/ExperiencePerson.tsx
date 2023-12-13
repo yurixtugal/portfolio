@@ -6,10 +6,11 @@ interface ExperiencePersonProps {
 }
 
 const ExperiencePerson = ({ info }: { info: ExperiencePersonProps[] }) => {
+  console.log(info)
   return (
     <>
-      <h2 className="text-3xl font-bold text-center py-10">Experience</h2>
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+      <h2 className="text-3xl font-bold text-center py-6">Experience</h2>
+      <ul className="timeline timeline-snap-icon max-lg:timeline-compact timeline-vertical">
         {info.map((item, index) => {
           if (index % 2 == 0) {
             return (
@@ -28,19 +29,28 @@ const ExperiencePerson = ({ info }: { info: ExperiencePersonProps[] }) => {
                     />
                   </svg>
                 </div>
-                <div className="timeline-start md:text-end mb-10">
+                <div className="hidden lg:block lg:timeline-start lg:text-end lg:mb-7">
                   <time className="font-mono italic">
-                    {item.year} - {item.company}
+                    {item.year}
                   </time>
-                  <div className="text-lg font-black">{item.title}</div>
+                  <div className="text-lg font-bold">{item.title}</div>
+                  <div className="text-sm pb-2">{item.company}</div>
                   {item.description}
                 </div>
-                <hr />
+                <div className="lg:hidden timeline-end lg:text-end mb-7">
+                  <time className="font-mono italic">
+                    {item.year}
+                  </time>
+                  <div className="text-lg font-bold">{item.title}</div>
+                  <div className="text-sm pb-2">{item.company}</div>
+                  {item.description}
+                </div>
+                <hr/>
               </li>
             );
           } else {
             return (
-              <li>
+              <li >
                 <hr />
                 <div className="timeline-middle">
                   <svg
@@ -56,11 +66,12 @@ const ExperiencePerson = ({ info }: { info: ExperiencePersonProps[] }) => {
                     />
                   </svg>
                 </div>
-                <div className="timeline-end mb-10">
+                <div className="timeline-end mb-7">
                   <time className="font-mono italic">
-                    {item.year} - {item.company}
+                    {item.year}
                   </time>
                   <div className="text-lg font-black">{item.title}</div>
+                  <div className="text-sm">{item.company}</div>
                   {item.description}
                 </div>
                 <hr />
