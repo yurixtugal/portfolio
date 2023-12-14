@@ -5,16 +5,17 @@ interface ExperiencePersonProps {
   description: string;
 }
 
-const ExperiencePerson = ({ info }: { info: ExperiencePersonProps[] }) => {
-  console.log(info)
+const ExperiencePerson = (prop: { info: ExperiencePersonProps[] }) => {
+  if (!prop) return null;
+  const { info } = prop;
   return (
     <>
-      <h2 className="text-3xl font-bold text-center py-6">Experience</h2>
-      <ul className="timeline timeline-snap-icon max-lg:timeline-compact timeline-vertical">
+      <h2 id="experience" className="text-3xl font-bold text-center py-6">Experience</h2>
+      <ul key="experience_1" className="timeline timeline-snap-icon max-lg:timeline-compact timeline-vertical">
         {info.map((item, index) => {
           if (index % 2 == 0) {
             return (
-              <li>
+              <li key={index}>
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +51,7 @@ const ExperiencePerson = ({ info }: { info: ExperiencePersonProps[] }) => {
             );
           } else {
             return (
-              <li >
+              <li key={index}>
                 <hr />
                 <div className="timeline-middle">
                   <svg

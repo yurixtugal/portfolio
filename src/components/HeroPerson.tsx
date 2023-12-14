@@ -9,7 +9,7 @@ const HeroPerson = (
   {info}: {info: HeroPersonProps}
 ) => {
   return (
-    <div className="hero min-h-screen bg-base-200  ">
+    <div className="hero min-h-screen bg-base-200" id="about">
       <div className="hero-content flex-col lg:flex-row-reverse lg:mx-24">
         <img src={info.image} className="max-w-sm rounded-lg shadow-2xl" />
         <div>

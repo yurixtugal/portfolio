@@ -24,7 +24,7 @@ const NavBar = ({
         <ul className="menu menu-horizontal px-1">
           {menu.map((item) => (
             <li key={item.name}>
-              <a>{item.name}</a>
+              <a href={item.path}>{item.name}</a>
             </li>
           ))}
         </ul>
@@ -40,7 +40,7 @@ const NavBar = ({
           >
             {menu.map((item) => (
               <li key={item.name}>
-                <a>{item.name}</a>
+                <a href={item.path}>{item.name}</a>
               </li>
             ))}
           </ul>

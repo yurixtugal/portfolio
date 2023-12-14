@@ -8,7 +8,8 @@ import { NavBar} from '../components/NavBar.tsx';
 import { HeroPerson } from '../components/HeroPerson.tsx';
 import { ExperiencePerson } from '../components/ExperiencePerson.tsx';
 import { FooterPortfolio } from '../components/FooterPortfolio.tsx';
-import { heroSection, navBar, experienceSection, footerSection } from '../data/data.ts';
+import { ProjectsPerson } from '../components/ProjectsPerson.tsx';
+import { heroSection, navBar, experienceSection, footerSection, projectsPerson  } from '../data/data.ts';
 ---
 <!doctype html>
 <html lang="en">
@@ -24,6 +25,7 @@ import { heroSection, navBar, experienceSection, footerSection } from '../data/d
 		<NavBar info={navBar} />
 		<HeroPerson info={heroSection}/>
 		<ExperiencePerson info={experienceSection}/>
+		<ProjectsPerson info={projectsPerson}/>
 		<FooterPortfolio info={footerSection} />
 	</body>
 </html>

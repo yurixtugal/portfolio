@@ -11,19 +11,19 @@ const navBar = {
   links: [
     {
       name: 'About',
-      path: '/about'
-    },
-    {
-      name: 'Projects',
-      path: '/projects'
+      path: '#about',
     },  
     {
       name: 'Experience',
-      path: '/experience',
+      path: '#experience',
+    },
+    {
+      name: 'Projects',
+      path: '#projects'
     },
     {
       name: 'Contact',
-      path: '/contact'
+      path: '#contact'
     }
   ]
 }
@@ -67,4 +67,23 @@ const footerSection = {
   github: 'https://github.com/yurixtugal'
 }
 
-export { heroSection, navBar, experienceSection, footerSection }
+const projectsPerson = [
+  {
+    title: "Draft-DB",
+    description: "Draft-DB is an open source project to help developers to find database models for their projects and scripts to create the database. All the models are generate with AI and are comming more models in the future, the project is open source and free to use.",
+    image: "/draft-db.png",
+    github: "https://github.com/yurixtugal/draft-db",
+    link: "https://draft-db.vercel.app/",
+    tech: ["Next.js", "Tailwind", "Mysql", "Typescript","Shadcn"]
+  },
+  {
+    title: "Rock Store",
+    description: "E-commerce for any rock store. This project is can support any rock store to sell their products online. The project is open source and free to use.",
+    image: "/e-commerce.png",
+    github: "https://github.com/yurixtugal/e-commerce",
+    link: "https://e-commerce-store-wheat.vercel.app",
+    tech: ["Next.js", "Tailwind", "Mysql", "Typescript","Mermaid","Shadcn"]
+  },
+]
+
+export { heroSection, navBar, experienceSection, footerSection, projectsPerson }
