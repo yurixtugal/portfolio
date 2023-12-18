@@ -17,7 +17,7 @@ const ProjectsPerson = (prop: { info: ProjectsPersonProps[] }) => {
       <h2 className="text-3xl font-bold text-center py-6">Personal Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-items-center pb-10">
         {info.map((item) => (
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card w-96 bg-base-100 shadow-xl mb-4">
             <figure>
               <img src={item.image} alt="Shoes" />
             </figure>

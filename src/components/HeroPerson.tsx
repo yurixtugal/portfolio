@@ -11,7 +11,7 @@ const HeroPerson = (
   return (
     <div className="hero min-h-screen bg-base-200" id="about">
       <div className="hero-content flex-col lg:flex-row-reverse lg:mx-24">
-        <img src={info.image} className="max-w-sm rounded-lg shadow-2xl" />
+        <img src={info.image} className="max-w-sm rounded-lg shadow-2xl mb-8 lg:mb-0" />
         <div>
           <h1 className="text-5xl font-bold">{info.title}</h1>
           <p className="py-6">

@@ -20,10 +20,6 @@ const navBar = {
     {
       name: 'Projects',
       path: '#projects'
-    },
-    {
-      name: 'Contact',
-      path: '#contact'
     }
   ]
 }
