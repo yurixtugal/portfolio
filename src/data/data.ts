@@ -69,7 +69,7 @@ const projectsPerson = [
     image: "/draft-db.png",
     github: "https://github.com/yurixtugal/draft-db",
     link: "https://draft-db.vercel.app/",
-    tech: ["Next.js", "Tailwind", "Mysql", "Typescript","Shadcn"]
+    tech: ["Next.js", "Tailwind", "Mysql", "Typescript","Shadcn","Mermaid"]
   },
   {
     title: "Rock Store",
@@ -77,7 +77,7 @@ const projectsPerson = [
     image: "/e-commerce.png",
     github: "https://github.com/yurixtugal/e-commerce",
     link: "https://e-commerce-store-wheat.vercel.app",
-    tech: ["Next.js", "Tailwind", "Mysql", "Typescript","Mermaid","Shadcn"]
+    tech: ["Next.js", "Tailwind", "Mysql", "Typescript","Shadcn"]
   },
 ]
 
