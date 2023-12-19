@@ -1,7 +1,6 @@
 const heroSection = {
   title: 'Hello, I am Yuri Portugal',
-  content: `Software Engineer with 10 years of experience implementing and leading development software projects. High skills in solving conflicts, adaptable to changes and empathy with the project team and stakeholders.
-  Interested in new software technologies and applications development.`,
+  content: `a Software Engineer with 10 years experience, my expertise extends across AWS, Node.js, Vue.js, React, Next.js, and TypeScript. My professional journey is marked by successfully leading projects where I've excelled in devising innovative solutions and fostering effective collaboration among teams and clients. Holding a degree in Informatics Engineering, my passion lies in full-stack development and cloud computing. I consistently aim to merge these advanced technical skills to develop solutions that are not only impactful but also closely aligned with user needs and practicality.`,
   button: 'Contact me',
   image: '/yurixtugal.png'
 }
